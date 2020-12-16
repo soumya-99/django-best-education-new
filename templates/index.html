@@ -1,0 +1,484 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Education</title>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/smooth-scroll.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal" style="background-color: rgb(33, 33, 114);">
+        <div class="modal-content">
+            <div class="container">
+                <form action="#">
+                    <h3 style="color: aliceblue;" class="center">Connected With Us</h3>
+                    <div class="divider"></div>
+                    <br>
+                    <div class="row">
+                        <div class="input-field col l6 s12">
+                            <input id="first_name" type="text" class="validate" style="color: aliceblue;" required>
+                            <label class="active" for="first_name">Enter Your Name</label>
+                        </div>
+                        <div class="input-field col l6 s12">
+                            <input id="Email" type="text" class="validate" style="color: aliceblue;" required>
+                            <label class="active" for="Email">Enter Your Email</label>
+                        </div>
+                    </div>
+                    <div class="btns" style="padding-bottom: 90px;">
+                        <button class="btn waves-effect green left" type="submit">Submit</button>
+                        <button class="btn waves-effect red right" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content" style="color: blue;">
+        <li><a href="#phy">Physics</a></li>
+        <li><a href="#math">Mathematics</a></li>
+        <li><a href="#bio">Biology</a></li>
+        <li><a href="#chem">Chemistry</a></li>
+    </ul>
+
+    <!-- Dropdown Structure For mobile -->
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#phy">Physics</a></li>
+        <li><a href="#math">Mathematics</a></li>
+        <li><a href="#bio">Biology</a></li>
+        <li><a href="#chem">Chemistry</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo" style="padding-left: 30px; font-family: 'Lobster', cursive; font-size: 1.5rem;">Best
+                Education</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">SUBJECTS<i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a data-target="modal1" class="modal-trigger">Connected With Us</a></li>
+            </ul>
+        </div>
+
+        <!--For Mobile View-->
+        <ul class="sidenav" id="mobile-demo">
+
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="./static/media/background-with-tourist.jpg" style="width: 100%;">
+                    </div>
+                    <a href="#"><img class="circle" src="./static/media/icons8-paper-plane-100.png"></a>
+                    <a href="#"><span class="blue-text name">Best Education</span></a>
+                    <a href="mailto:soumya.no-reply@gmail.com"><span class="red-text email">soumya.no-reply@gmail.com</span></a>
+                </div>
+            </li>
+
+            <li><a class="dropdown-trigger waves-effect waves-red" href="#!" data-target="dropdown2">SUBJECTS</a></li>
+            <li><a href="#pricing" class="waves-effect waves-green">PRICING</a></li>
+            <li><a href="{% url 'forms' %}" class="waves-effect waves-yellow">Connected With Us</a></li>
+        </ul>
+
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <h3 style="color: aliceblue">Best Education Center</h3>
+        <span style="color: antiquewhite; font-size: 20;">- We don't teach, We Eduacte. [JEE Main, JEE Advanced, NEET, Board Covered]</span>
+        <hr>
+    </div>
+
+    <br>
+
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="../static/media/airplane.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="../static/media/background-with-tourist.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="../static/media/goa.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="../static/media/Maharashtra_Tourism.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="../static/media/Nalanda_University_India_ruins.jpg"></a>
+    </div>
+
+    <div class="container">
+        <section id="phy">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h4 style="color: rgb(12, 117, 238);"><strong>Physics</strong></h4>
+                    <div class="divider"></div>
+
+                    <div class="card blue darken-1" style="border-radius: 20px">
+                        <div class="card-content white-text">
+                            <span class="card-title">Anubhab Chakraborty</span>
+                            <div class="divider"></div>
+                            <p>The Taj Mahal ('Crown of the Palace') is an ivory-white marble mausoleum on the southern
+                                bank of the river Yamuna in the Indian city of Agra. It was commissioned in 1632 by the
+                                Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite
+                                wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the
+                                centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest
+                                house, and is set in formal gardens bounded on three sides by a crenellated wall.</p>
+                        </div>
+                        <div class="card-action" style="border-radius: 20px">
+                            <a href="#" class="waves-effect waves-yellow" style="color: aliceblue;">G-Pay, Phone-Pe
+                                Allowed</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col l8 s12" style="padding-top: 15px;">
+                    <img src="../static/media/tajmahal.jpg" alt="" style="width: 100%; border-radius: 20px;">
+                    <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="divider"></div>
+        <br>
+
+        <section id="math">
+            <div class="row">
+                <div class="col l8 s12">
+                    <img src="../static/media/victoria.jfif" alt="vict" style="width: 100%; border-radius: 20px;">
+                    <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
+                </div>
+                <div class="col l4 s12">
+                    <h4 style="color: rgb(214, 59, 85);"><strong>Mathematics</strong></h4>
+                    <div class="divider"></div>
+
+                    <div class="card pink darken-1" style="border-radius: 20px">
+                        <div class="card-content white-text">
+                            <span class="card-title">Kamal Biswas</span>
+                            <div class="divider"></div>
+                            <p>The Victoria Memorial is a large marble building in Kolkata, West Bengal, India, which
+                                was built between 1906 and 1921. It is dedicated to the memory of Queen Victoria, then
+                                Empress of India, and is now a museum and tourist destination under the auspices of the
+                                Ministry of Culture. The memorial lies on the Maidan (grounds) by the bank of the
+                                Hooghly River, near Jawaharlal Nehru Road (better known as Chowringhee Road)</p>
+                        </div>
+                        <div class="card-action" style="border-radius: 20px">
+                            <a href="#" class="waves-effect" style="color: aliceblue;">G-Pay, Phone-Pe Allowed</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+        <br>
+
+        <section id="bio">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h4 style="color: rgb(31, 196, 31);"><strong>Biology</strong></h4>
+                    <div class="divider"></div>
+
+                    <div class="card green darken-1" style="border-radius: 20px">
+                        <div class="card-content white-text">
+                            <span class="card-title">Biology Teacher</span>
+                            <div class="divider"></div>
+                            <p>Goa (About this soundlisten) is a state on the southwestern coast of India within the
+                                region known as the Konkan, and geographically separated from the Deccan highlands by
+                                the Western Ghats. It is surrounded by the Indian states of Maharashtra to the north and
+                                Karnataka to the east and south, with the Arabian Sea forming its western coast. It is
+                                India's smallest state by area and the fourth-smallest by population. Goa has the
+                                highest GDP per capita among all Indian states, two and a half times that of the
+                                country. It was ranked the best-placed state by the Eleventh Finance Commission for its
+                                infrastructure and ranked on top for the best quality of life in India by the National
+                                Commission on Population based on the 12 Indicators.</p>
+                        </div>
+                        <div class="card-action" style="border-radius: 20px">
+                            <a href="#" class="waves-effect waves-yellow" style="color: aliceblue;">Only Hand on
+                                Cash</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l8 s12">
+                    <img src="../static/media/goa.jpg" alt="" style="width: 100%; border-radius: 20px;">
+                    <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="divider"></div>
+        <br>
+
+        <section id="chem">
+            <div class="row">
+                <div class="col l8 s12">
+                    <img src="../static/media/knnykmri.cms" alt="vict" style="width: 100%; border-radius: 20px;">
+                    <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
+                </div>
+                <div class="col l4 s12">
+                    <h4 style="color: rgb(241, 127, 21);"><strong>Chemistry</strong></h4>
+                    <div class="divider"></div>
+
+                    <div class="card orange darken-1" style="border-radius: 20px">
+                        <div class="card-content white-text">
+                            <span class="card-title">Chemistry Teacher</span>
+                            <div class="divider"></div>
+                            <p>Kanyakumari or Kanniyakumari (also known as Cape Comorin) is a town in Kanyakumari
+                                District in the state of Tamil Nadu in India. The southernmost town in mainland India,
+                                it is sometimes referred to as 'the Land's End'.A popular tourist destination in India,
+                                it is famous for its unique ocean sunrise and moonrise, the 133 feet Thiruvalluvar
+                                Statue and Vivekananda Rock Memorial off the coast, and as a pilgrimage centre. Lying at
+                                the tip of peninsular India, it is the confluence of the Arabian sea, the Bay of Bengal
+                                and the Indian Ocean. It has a coastal line of 71.5 km stretched on the three sides</p>
+                        </div>
+                        <div class="card-action" style="border-radius: 20px">
+                            <a href="#" class="waves-effect" style="color: aliceblue;">Proceed to go here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+        <!-- <div class="divider"></div>
+    <br>
+
+    <section id="bihar">
+      <div class="row">
+        <div class="col l4 s12">
+            <h4 style="color: rgb(37, 187, 192);"><strong>Bihar</strong></h4>
+            <div class="divider"></div>
+
+            <div class="card cyan darken-1" style="border-radius: 20px">
+                <div class="card-content white-text">
+                  <span class="card-title">Nalanda University</span>
+                  <div class="divider"></div>
+                  <p>Nalanda was an ancient Mahavihara, a revered Buddhist monastery which also served as a renowned centre of learning, in the ancient kingdom of Magadha (modern-day Bihar) in India. The ancient university of Nalanda obtained significant fame, prestige and relevance during ancient times, and rose to legendary status due to its contribution to the emergence of India as a great power around the fourth century. The site is located about 95 kilometres (59 mi) southeast of Patna near the city of Bihar Sharif, and was one of the greatest centres of learning from the fifth century CE to c. 1200 CE. Today, it is a UNESCO World Heritage Site.</p>
+                </div>
+                <div class="card-action" style="border-radius: 20px">
+                  <a href="#" class="waves-effect waves-yellow" style="color: aliceblue;">Proceed to go here</a>
+                </div>
+              </div>
+        </div>
+        <div class="col l8 s12">
+            <img src="./img/Nalanda_University_India_ruins.jpg" alt="" style="width: 100%; border-radius: 20px;">
+            <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
+        </div>
+    </div>
+    </section>
+    
+
+    <div class="divider"></div>
+    <br>
+
+    <section id="rajas">
+      <div class="row">
+        <div class="col l8 s12">
+            <img src="./img/rajasthan-tourism.jpg" alt="vict" style="width: 100%; border-radius: 20px;">
+            <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
+        </div>
+        <div class="col l4 s12">
+            <h4 style="color: rgb(241, 127, 21);"><strong>Rajasthan</strong></h4>
+            <div class="divider"></div>
+
+            <div class="card amber darken-3" style="border-radius: 20px">
+                <div class="card-content white-text">
+                  <span class="card-title">Swarna Mandir</span>
+                  <div class="divider"></div>
+                  <p>The Darbār Sahib, meaning "exalted court" (Punjabi pronunciation: [d̪əɾᵊbaːɾᵊ saːɦ(ɪ)bᵊ]) or Harmandir Sahib, meaning "abode of God" (Punjabi pronunciation: [ɦəɾᵊmən̪d̪əɾᵊ saːɦ(ɪ)bᵊ]), also known as Golden Temple, is a Gurdwara located in the city of Amritsar, Punjab, India. It is the preeminent spiritual site of Sikhism.</p>
+                </div>
+                <div class="card-action" style="border-radius: 20px">
+                  <a href="#" class="waves-effect" style="color: aliceblue;">Proceed to go here</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    </section>
+    
+
+    <div class="divider"></div>
+    <br>
+
+    <section id="maha">
+      <div class="row">
+        <div class="col l4 s12">
+            <h4 style="color: rgb(18, 194, 156);"><strong>Maharashtra</strong></h4>
+            <div class="divider"></div>
+
+            <div class="card cyan darken-1" style="border-radius: 20px">
+                <div class="card-content white-text">
+                  <span class="card-title">Gateway Of India</span>
+                  <div class="divider"></div>
+                  <p>The Gateway of India is an arch-monument built in the early twentieth century in the city of Mumbai, in the Indian state of Maharashtra. It was erected to commemorate the landing in December 1911 at Apollo Bunder, Mumbai (then Bombay) of King-Emperor George V and Queen-Empress Mary, the first British monarch to visit India. At the time of the royal visit, the gateway was not yet built, and a cardboard structure greeted the monarch. The foundation stone was laid in March 1913 for a monument built in the Indo-Saracenic style, incorporating elements of 16th-century Marathi architecture. The final design of the monument by architect George Wittet was sanctioned only in 1914, and construction was completed in 1924. The structure is a triumphal arch made of basalt, which is 26 metres (85 feet) high.</p>
+                </div>
+                <div class="card-action" style="border-radius: 20px">
+                  <a href="#" class="waves-effect waves-yellow" style="color: aliceblue;">Proceed to go here</a>
+                </div>
+              </div>
+        </div>
+        <div class="col l8 s12">
+            <img src="./img/maharastra.cms" alt="" style="width: 100%; border-radius: 20px;">
+            Clicked By: Someone on the Internet.
+        </div>
+    </div>
+    </section>
+    
+  </div> -->
+
+        <div class="divider"></div>
+        <br>
+
+        <section id="pricing">
+            <div class="container">
+                <h3 style="color:azure">Pricing</h3>
+
+                <table class="responsive-table highlight centered"
+                    style="color: aliceblue; border: 1px solid; border-color: aliceblue;">
+                    <thead class="blue">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Teacher</th>
+                            <th>Fees</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for all in tableData %}
+                        <tr>
+                            <td>{{all.subject}}</td>
+                            <td>{{all.name}}</td>
+                            <td>{{all.price}}</td>
+                        </tr>
+                        {% endfor %}
+                        <!-- <tr>
+                            <td>Mathematics</td>
+                            <td>Kamal Biswas</td>
+                            <td>1000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>Biology Teacher</td>
+                            <td>500/-</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>Chemistry Teacher</td>
+                            <td>1000/-</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <div class="divider"></div>
+            </div>
+        </section>
+        <br>
+        <div class="divider"></div>
+
+
+        <section id="glance">
+            <div class="container">
+                <h3 style="color: aliceblue; border-bottom: 1px dotted; padding-bottom: 8px;" class="center">At a Glance
+                </h3>
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!">
+
+                        <div class="card red darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Kamal Biswas</span>
+                                <div class="divider"></div>
+                                <p>It's known as 'City of Joy'. It's situated beside the river Ganges. Come here with us
+                                    and explore more of Kolkata. Tap the card to purchase.</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a class="carousel-item" href="#two!">
+                        <div class="card blue darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Anubhab Chakraborty</span>
+                                <div class="divider"></div>
+                                <p>Mumbai is the City of Bollywood. Here you can see the Gateway of India as well as the
+                                    lastest Slum of Asia. Tap the card to purchase now.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="carousel-item" href="#three!">
+                        <div class="card green darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Biology Teacher</span>
+                                <div class="divider"></div>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="carousel-item" href="#three!">
+                        <div class="card purple darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Chemistry Teacher</span>
+                                <div class="divider"></div>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="page-footer blue darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">About Us</h5>
+                        <div class="divider"></div>
+                        <p class="grey-text text-lighten-4">All rights reserved by <a href="https://soumya-99.github.io/Portfolio-Soumyadeep/"
+                                style="color: rgb(235, 52, 52);">WebOGraph Inc.</a> We create responsive websites and
+                            sell them with a fair price. This is only a template website. Find Us on Google Maps.</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14723.466620256018!2d88.33379029999999!3d22.69600735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590397038411!5m2!1sen!2sin"
+                            width="800" height="800" frameborder="0" style="height: 240px; width: 290px;"
+                            allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <div class="divider"></div>
+                        <ul>
+                            <li style="padding-top: 6px;"><a class="grey-text text-lighten-3"
+                                    href="https://www.facebook.com/soumyadeep.mondal.984/"><Button
+                                        class="btn waves-effect blue pulse">Facebook</Button></a></li>
+                            <br>
+                            <li><a class="grey-text text-lighten-3"
+                                    href="https://www.instagram.com/m0ndal.s0umyadeep/"><Button
+                                        class="btn waves-effect red darken-1 pulse">Instagram</Button></a></li>
+                            <br>
+                            <li><a class="grey-text text-lighten-3" href="https://github.com/soumya-99"><Button
+                                        class="btn waves-effect green darken-1 pulse">GitHub</Button></a></li>
+                            <br>
+                            <li><a class="grey-text text-lighten-3" href="#!"><Button
+                                        class="btn waves-effect orange pulse">Twitter</Button></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2020 Copyright By Soumyadeep Mondal
+                    <a class="grey-text text-lighten-4 right" href="#!">Disclaimer</a>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            background-image: url("../static/media/bg.jpg");
+            width: 100%;
+            background-repeat: repeat-y;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <h3 style="color: aliceblue;" class="center">Connected With Us</h3>
+            <div class="divider"></div>
+            <br>
+            <div class="row">
+                <div class="input-field col l6 s12">
+                    <input id="first_name" type="text" class="validate" style="color: aliceblue;" required>
+                    <label class="active" for="first_name">Enter Your Name</label>
+                </div>
+                <div class="input-field col l6 s12">
+                    <input id="Email" type="text" class="validate" style="color: aliceblue;" required>
+                    <label class="active" for="Email">Enter Your Email</label>
+                </div>
+            </div>
+            <button class="btn waves-effect green left" type="submit">Submit</button>
+            <button class="btn waves-effect red right" type="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
