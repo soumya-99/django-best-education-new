@@ -252,90 +252,6 @@
     </div>
 
 
-    <!-- <div class="divider"></div>
-    <br>
-
-    <section id="bihar">
-      <div class="row">
-        <div class="col l4 s12">
-            <h4 style="color: rgb(37, 187, 192);"><strong>Bihar</strong></h4>
-            <div class="divider"></div>
-
-            <div class="card cyan darken-1" style="border-radius: 20px">
-                <div class="card-content white-text">
-                  <span class="card-title">Nalanda University</span>
-                  <div class="divider"></div>
-                  <p>Nalanda was an ancient Mahavihara, a revered Buddhist monastery which also served as a renowned centre of learning, in the ancient kingdom of Magadha (modern-day Bihar) in India. The ancient university of Nalanda obtained significant fame, prestige and relevance during ancient times, and rose to legendary status due to its contribution to the emergence of India as a great power around the fourth century. The site is located about 95 kilometres (59 mi) southeast of Patna near the city of Bihar Sharif, and was one of the greatest centres of learning from the fifth century CE to c. 1200 CE. Today, it is a UNESCO World Heritage Site.</p>
-                </div>
-                <div class="card-action" style="border-radius: 20px">
-                  <a href="#" class="waves-effect waves-yellow" style="color: aliceblue;">Proceed to go here</a>
-                </div>
-              </div>
-        </div>
-        <div class="col l8 s12">
-            <img src="./img/Nalanda_University_India_ruins.jpg" alt="" style="width: 100%; border-radius: 20px;">
-            <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
-        </div>
-    </div>
-    </section>
-    
-
-    <div class="divider"></div>
-    <br>
-
-    <section id="rajas">
-      <div class="row">
-        <div class="col l8 s12">
-            <img src="./img/rajasthan-tourism.jpg" alt="vict" style="width: 100%; border-radius: 20px;">
-            <span style="color: aliceblue;">Clicked By: Someone on the Internet.</span>
-        </div>
-        <div class="col l4 s12">
-            <h4 style="color: rgb(241, 127, 21);"><strong>Rajasthan</strong></h4>
-            <div class="divider"></div>
-
-            <div class="card amber darken-3" style="border-radius: 20px">
-                <div class="card-content white-text">
-                  <span class="card-title">Swarna Mandir</span>
-                  <div class="divider"></div>
-                  <p>The Darbār Sahib, meaning "exalted court" (Punjabi pronunciation: [d̪əɾᵊbaːɾᵊ saːɦ(ɪ)bᵊ]) or Harmandir Sahib, meaning "abode of God" (Punjabi pronunciation: [ɦəɾᵊmən̪d̪əɾᵊ saːɦ(ɪ)bᵊ]), also known as Golden Temple, is a Gurdwara located in the city of Amritsar, Punjab, India. It is the preeminent spiritual site of Sikhism.</p>
-                </div>
-                <div class="card-action" style="border-radius: 20px">
-                  <a href="#" class="waves-effect" style="color: aliceblue;">Proceed to go here</a>
-                </div>
-              </div>
-        </div>
-    </div>
-    </section>
-    
-
-    <div class="divider"></div>
-    <br>
-
-    <section id="maha">
-      <div class="row">
-        <div class="col l4 s12">
-            <h4 style="color: rgb(18, 194, 156);"><strong>Maharashtra</strong></h4>
-            <div class="divider"></div>
-
-            <div class="card cyan darken-1" style="border-radius: 20px">
-                <div class="card-content white-text">
-                  <span class="card-title">Gateway Of India</span>
-                  <div class="divider"></div>
-                  <p>The Gateway of India is an arch-monument built in the early twentieth century in the city of Mumbai, in the Indian state of Maharashtra. It was erected to commemorate the landing in December 1911 at Apollo Bunder, Mumbai (then Bombay) of King-Emperor George V and Queen-Empress Mary, the first British monarch to visit India. At the time of the royal visit, the gateway was not yet built, and a cardboard structure greeted the monarch. The foundation stone was laid in March 1913 for a monument built in the Indo-Saracenic style, incorporating elements of 16th-century Marathi architecture. The final design of the monument by architect George Wittet was sanctioned only in 1914, and construction was completed in 1924. The structure is a triumphal arch made of basalt, which is 26 metres (85 feet) high.</p>
-                </div>
-                <div class="card-action" style="border-radius: 20px">
-                  <a href="#" class="waves-effect waves-yellow" style="color: aliceblue;">Proceed to go here</a>
-                </div>
-              </div>
-        </div>
-        <div class="col l8 s12">
-            <img src="./img/maharastra.cms" alt="" style="width: 100%; border-radius: 20px;">
-            Clicked By: Someone on the Internet.
-        </div>
-    </div>
-    </section>
-    
-  </div> -->
 
     <div class="divider"></div>
     <br>
@@ -355,6 +271,7 @@
                 </thead>
 
                 <tbody>
+
                     {% for all in tableData %}
                     <tr>
                         <td>{{all.subject}}</td>
@@ -362,21 +279,7 @@
                         <td>{{all.price}}</td>
                     </tr>
                     {% endfor %}
-                    <!-- <tr>
-                            <td>Mathematics</td>
-                            <td>Kamal Biswas</td>
-                            <td>1000/-</td>
-                        </tr>
-                        <tr>
-                            <td>Biology</td>
-                            <td>Biology Teacher</td>
-                            <td>500/-</td>
-                        </tr>
-                        <tr>
-                            <td>Chemistry</td>
-                            <td>Chemistry Teacher</td>
-                            <td>1000/-</td>
-                        </tr> -->
+
                 </tbody>
             </table>
             <div class="divider"></div>
