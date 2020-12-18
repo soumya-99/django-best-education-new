@@ -61,7 +61,8 @@
     </ul>
     <nav>
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo" style="padding-left: 30px; font-family: 'Lobster', cursive; font-size: 1.5rem;">Best
+            <a href="#!" class="brand-logo"
+                style="padding-left: 30px; font-family: 'Lobster', cursive; font-size: 1.5rem;">Best
                 Education</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
@@ -82,7 +83,8 @@
                     </div>
                     <a href="#"><img class="circle" src="./static/media/icons8-paper-plane-100.png"></a>
                     <a href="#"><span class="blue-text name">Best Education</span></a>
-                    <a href="mailto:soumya.no-reply@gmail.com"><span class="red-text email">soumya.no-reply@gmail.com</span></a>
+                    <a href="mailto:soumya.no-reply@gmail.com"><span
+                            class="red-text email">soumya.no-reply@gmail.com</span></a>
                 </div>
             </li>
 
@@ -97,7 +99,8 @@
 
     <div class="container">
         <h3 style="color: aliceblue">Best Education Center</h3>
-        <span style="color: antiquewhite; font-size: 20;">- We don't teach, We Eduacte. [JEE Main, JEE Advanced, NEET, Board Covered]</span>
+        <span style="color: antiquewhite; font-size: 20;">- We don't teach, We Eduacte. [JEE Main, JEE Advanced, NEET,
+            Board Covered]</span>
         <hr>
     </div>
 
@@ -248,7 +251,7 @@
     </div>
 
 
-        <!-- <div class="divider"></div>
+    <!-- <div class="divider"></div>
     <br>
 
     <section id="bihar">
@@ -333,32 +336,32 @@
     
   </div> -->
 
-        <div class="divider"></div>
-        <br>
+    <div class="divider"></div>
+    <br>
 
-        <section id="pricing">
-            <div class="container">
-                <h3 style="color:azure">Pricing</h3>
+    <section id="pricing">
+        <div class="container">
+            <h3 style="color:azure">Pricing</h3>
 
-                <table class="responsive-table highlight centered"
-                    style="color: aliceblue; border: 1px solid; border-color: aliceblue;">
-                    <thead class="blue">
-                        <tr>
-                            <th>Subject</th>
-                            <th>Teacher</th>
-                            <th>Fees</th>
-                        </tr>
-                    </thead>
+            <table class="responsive-table highlight centered"
+                style="color: aliceblue; border: 1px solid; border-color: aliceblue;">
+                <thead class="blue">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Teacher</th>
+                        <th>Fees [Rupees]</th>
+                    </tr>
+                </thead>
 
-                    <tbody>
-                        {% for all in tableData %}
-                        <tr>
-                            <td>{{all.subject}}</td>
-                            <td>{{all.name}}</td>
-                            <td>{{all.price}}</td>
-                        </tr>
-                        {% endfor %}
-                        <!-- <tr>
+                <tbody>
+                    {% for all in tableData %}
+                    <tr>
+                        <td>{{all.subject}}</td>
+                        <td>{{all.name}}</td>
+                        <td>{{all.price}}</td>
+                    </tr>
+                    {% endfor %}
+                    <!-- <tr>
                             <td>Mathematics</td>
                             <td>Kamal Biswas</td>
                             <td>1000/-</td>
@@ -373,111 +376,121 @@
                             <td>Chemistry Teacher</td>
                             <td>1000/-</td>
                         </tr> -->
-                    </tbody>
-                </table>
-                <div class="divider"></div>
-            </div>
-        </section>
-        <br>
-        <div class="divider"></div>
+                </tbody>
+            </table>
+            <div class="divider"></div>
+        </div>
+    </section>
+    <br>
+    <div class="divider"></div>
 
 
-        <section id="glance">
-            <div class="container">
-                <h3 style="color: aliceblue; border-bottom: 1px dotted; padding-bottom: 8px;" class="center">At a Glance
-                </h3>
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!">
+    <section id="glance">
+        <div class="container">
+            <h3 style="color: aliceblue; border-bottom: 1px dotted; padding-bottom: 8px;" class="center">At a Glance
+            </h3>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!">
 
-                        <div class="card red darken-1">
-                            <div class="card-content white-text">
-                                <span class="card-title">Kamal Biswas</span>
-                                <div class="divider"></div>
-                                <p>It's known as 'City of Joy'. It's situated beside the river Ganges. Come here with us
-                                    and explore more of Kolkata. Tap the card to purchase.</p>
-                            </div>
+                    <div class="card red darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Kamal Biswas</span>
+                            <div class="divider"></div>
+                            <p>It's known as 'City of Joy'. It's situated beside the river Ganges. Come here with us
+                                and explore more of Kolkata. Tap the card to purchase.</p>
                         </div>
-
-                    </a>
-                    <a class="carousel-item" href="#two!">
-                        <div class="card blue darken-1">
-                            <div class="card-content white-text">
-                                <span class="card-title">Anubhab Chakraborty</span>
-                                <div class="divider"></div>
-                                <p>Mumbai is the City of Bollywood. Here you can see the Gateway of India as well as the
-                                    lastest Slum of Asia. Tap the card to purchase now.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="carousel-item" href="#three!">
-                        <div class="card green darken-1">
-                            <div class="card-content white-text">
-                                <span class="card-title">Biology Teacher</span>
-                                <div class="divider"></div>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="carousel-item" href="#three!">
-                        <div class="card purple darken-1">
-                            <div class="card-content white-text">
-                                <span class="card-title">Chemistry Teacher</span>
-                                <div class="divider"></div>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-
-        <footer class="page-footer blue darken-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">About Us</h5>
-                        <div class="divider"></div>
-                        <p class="grey-text text-lighten-4">All rights reserved by <a href="https://soumya-99.github.io/Portfolio-Soumyadeep/"
-                                style="color: rgb(235, 52, 52);">WebOGraph Inc.</a> We create responsive websites and
-                            sell them with a fair price. This is only a template website. Find Us on Google Maps.</p>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14723.466620256018!2d88.33379029999999!3d22.69600735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590397038411!5m2!1sen!2sin"
-                            width="800" height="800" frameborder="0" style="height: 240px; width: 290px;"
-                            allowfullscreen="" aria-hidden="false" tabindex="0">
-                        </iframe>
                     </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Links</h5>
-                        <div class="divider"></div>
-                        <ul>
-                            <li style="padding-top: 6px;"><a class="grey-text text-lighten-3"
-                                    href="https://www.facebook.com/soumyadeep.mondal.984/"><Button
-                                        class="btn waves-effect blue pulse">Facebook</Button></a></li>
-                            <br>
-                            <li><a class="grey-text text-lighten-3"
-                                    href="https://www.instagram.com/m0ndal.s0umyadeep/"><Button
-                                        class="btn waves-effect red darken-1 pulse">Instagram</Button></a></li>
-                            <br>
-                            <li><a class="grey-text text-lighten-3" href="https://github.com/soumya-99"><Button
-                                        class="btn waves-effect green darken-1 pulse">GitHub</Button></a></li>
-                            <br>
-                            <li><a class="grey-text text-lighten-3" href="#!"><Button
-                                        class="btn waves-effect orange pulse">Twitter</Button></a></li>
-                        </ul>
+
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <div class="card blue darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Anubhab Chakraborty</span>
+                            <div class="divider"></div>
+                            <p>Mumbai is the City of Bollywood. Here you can see the Gateway of India as well as the
+                                lastest Slum of Asia. Tap the card to purchase now.</p>
+                        </div>
                     </div>
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <div class="card green darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Biology Teacher</span>
+                            <div class="divider"></div>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <div class="card purple darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Chemistry Teacher</span>
+                            <div class="divider"></div>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section>
+        {% for all in imageData %}
+        <div>
+            <img src="{{all.image.url}}" alt="imageTesting">
+        </div>
+        {% endfor %}
+    </section> -->
+
+
+    <footer class="page-footer blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About Us</h5>
+                    <div class="divider"></div>
+                    <p class="grey-text text-lighten-4">All rights reserved by <a
+                            href="https://soumya-99.github.io/Portfolio-Soumyadeep/"
+                            style="color: rgb(235, 52, 52);">WebOGraph Inc.</a> We create responsive websites and
+                        sell them with a fair price. This is only a template website. Find Us on Google Maps.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14723.466620256018!2d88.33379029999999!3d22.69600735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1590397038411!5m2!1sen!2sin"
+                        width="800" height="800" frameborder="0" style="height: 240px; width: 290px;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <div class="divider"></div>
+                    <ul>
+                        <li style="padding-top: 6px;"><a class="grey-text text-lighten-3"
+                                href="https://www.facebook.com/soumyadeep.mondal.984/"><Button
+                                    class="btn waves-effect blue pulse">Facebook</Button></a></li>
+                        <br>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.instagram.com/m0ndal.s0umyadeep/"><Button
+                                    class="btn waves-effect red darken-1 pulse">Instagram</Button></a></li>
+                        <br>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/soumya-99"
+                                target="__blank"><Button
+                                    class="btn waves-effect green darken-1 pulse">GitHub</Button></a></li>
+                        <br>
+                        <li><a class="grey-text text-lighten-3" href="#!"><Button
+                                    class="btn waves-effect orange pulse">Twitter</Button></a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2020 Copyright By Soumyadeep Mondal
-                    <a class="grey-text text-lighten-4 right" href="#!">Disclaimer</a>
-                </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright By Soumyadeep Mondal
+                <a class="grey-text text-lighten-4 right" href="#!">Disclaimer</a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 

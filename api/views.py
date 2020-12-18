@@ -5,7 +5,8 @@ from .models import *
 
 def IndexPage(request):
     tableData = PriceData.objects.all()
-    return render(request, "index.html", {'tableData' : tableData})
+    imageData = ImageDataForIntro.objects.all()
+    return render(request, "index.html", {'tableData': tableData, 'imageData': imageData})
 
 def FormForMobile(request):
     return render(request, "form.html")

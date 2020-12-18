@@ -9,3 +9,6 @@ class PriceData(models.Model):
 
     def __str__(self):
         return self.name
+
+class ImageDataForIntro(models.Model):
+    image = models.ImageField(upload_to="images", blank=True)
