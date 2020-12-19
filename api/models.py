@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 
 # Create your models here.
 
@@ -12,3 +13,10 @@ class PriceData(models.Model):
 
 class ImageDataForIntro(models.Model):
     image = models.ImageField(upload_to="images", blank=True)
+
+class SubscriptionForm(models.Model):
+    name = models.CharField(max_length=250)
+    email = models.EmailField()
+
+    def __str__(self):
+        return self.email

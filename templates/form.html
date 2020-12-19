@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 <html lang="en">
 
 <head>
@@ -21,7 +22,7 @@
 
         html,
         body {
-            background-image: url("../static/media/bg.jpg");
+            background-image: linear-gradient(rgb(228, 71, 71), forestgreen);
             width: 100%;
             background-repeat: repeat-y;
             font-family: 'Ubuntu', sans-serif;
@@ -31,18 +32,21 @@
 
 <body>
     <div class="container">
-        <form action="#">
+        <form action="#" method="POST" autocomplete="on">
+            {% csrf_token %}
             <h3 style="color: aliceblue;" class="center">Connected With Us</h3>
             <div class="divider"></div>
             <br>
             <div class="row">
                 <div class="input-field col l6 s12">
-                    <input id="first_name" type="text" class="validate" style="color: aliceblue;" required>
-                    <label class="active" for="first_name">Enter Your Name</label>
+                    <!-- <input id="first_name" type="text" class="validate" style="color: aliceblue;" required>
+                    <label class="active" for="first_name">Enter Your Name</label> -->
+                    {{form.name|as_crispy_field}}
                 </div>
                 <div class="input-field col l6 s12">
-                    <input id="Email" type="text" class="validate" style="color: aliceblue;" required>
-                    <label class="active" for="Email">Enter Your Email</label>
+                    <!-- <input id="Email" type="text" class="validate" style="color: aliceblue;" required>
+                    <label class="active" for="Email">Enter Your Email</label> -->
+                    {{form.email|as_crispy_field}}
                 </div>
             </div>
             <button class="btn waves-effect green left" type="submit">Submit</button>
