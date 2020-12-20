@@ -82,11 +82,9 @@
     <br>
 
     <div class="carousel">
-        <a class="carousel-item" href="#one!"><img src="../static/media/airplane.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="../static/media/background-with-tourist.jpg"></a>
-        <a class="carousel-item" href="#three!"><img src="../static/media/goa.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="../static/media/Maharashtra_Tourism.jpg"></a>
-        <a class="carousel-item" href="#five!"><img src="../static/media/Nalanda_University_India_ruins.jpg"></a>
+        {% for all in imageData %}
+        <a class="carousel-item" href="#one!"><img src="{{all.image.url}}"></a>
+        {% endfor %}
     </div>
 
     <div class="container">
@@ -313,15 +311,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- <section>
-        {% for all in imageData %}
-        <div>
-            <img src="{{all.image.url}}" alt="imageTesting">
-        </div>
-        {% endfor %}
-    </section> -->
 
 
     <footer class="page-footer blue darken-3">

@@ -12,7 +12,7 @@ class PriceData(models.Model):
         return self.name
 
 class ImageDataForIntro(models.Model):
-    image = models.ImageField(upload_to="images", blank=True)
+    image = models.ImageField(upload_to="carousel_images", blank=True)
 
 class SubscriptionForm(models.Model):
     name = models.CharField(max_length=250)
